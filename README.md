@@ -5,9 +5,7 @@ The goal is to combine Rust’s safety and performance with the accessibility of
 
 [Rust core] → C ABI → [C# wrapper/API] → your .NET apps/games
 
-yaml
-Kopier
-Rediger
+
 
 ---
 
@@ -45,9 +43,7 @@ NordicVoxel/
 ├─ LICENSE
 └─ CONTRIBUTING.md
 
-yaml
-Kopier
-Rediger
+
 
 ---
 
@@ -72,9 +68,7 @@ libvoxel_core.dylib (macOS)
 2. Copy the native library into the .NET project
 Copy the compiled library into:
 
-bash
-Kopier
-Rediger
+
 dotnet/VoxelEngine/runtimes/win-x64/native/voxel_core.dll
 dotnet/VoxelEngine/runtimes/linux-x64/native/libvoxel_core.so
 dotnet/VoxelEngine/runtimes/osx-arm64/native/libvoxel_core.dylib
@@ -88,9 +82,7 @@ cd ../../dotnet/VoxelEngine
 dotnet run
 Expected output (example):
 
-yaml
-Kopier
-Rediger
+
 ChunkSize: 16
 Verts: 1234 (floats: 9872)
 Indices: 2468
@@ -98,26 +90,20 @@ v0: pos=(0, 0, 0) n=(0, 1, 0) uv=(0, 0)
 🛠️ Development Workflow
 Rust
 
-bash
-Kopier
-Rediger
+
 cargo fmt --all
 cargo clippy --all-targets --all-features -D warnings
 cargo build --release
 .NET
 
-bash
-Kopier
-Rediger
+
 dotnet format
 dotnet build -c Release
 dotnet run
 🧪 Example Usage
 C# API:
 
-csharp
-Kopier
-Rediger
+
 using VoxelEngine;
 
 class Demo {
@@ -163,3 +149,4 @@ Rustaceans 🦀 for safe performance
 The .NET ecosystem for developer ergonomics
 
 Open-source voxel engine research & community inspiration
+
