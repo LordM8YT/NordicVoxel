@@ -1,22 +1,5 @@
-﻿# NordicVoxel
+# NordicVoxel
 
-Rust-basert voxel-motor med C#-API. Pipeline:
+**NordicVoxel** is an experimental open-source voxel engine written in **Rust** with a safe and friendly **C# API**.  
+The idea: leverage Rust’s performance and safety in the core, while exposing a clean .NET interface for gameplay code, tools, and prototyping.
 
-\[Rust core]\ → C ABI → \[C# wrapper/API]\ → dine .NET-spill/tools
-
-## Kjappstart
-1) Bygg Rust:
-\\\ash
-cd rust/voxel_core
-cargo build --release
-\\\
-
-2) Kopiér native-lib til .NET-prosjektets \untimes/*/native\ (CI gjør dette for deg i Actions også).
-
-3) Kjør demo:
-\\\ash
-cd ../../dotnet/VoxelEngine
-dotnet run
-\\\
-
-MIT-lisens. Bidrag velkomne 💙
