@@ -1,0 +1,20 @@
+﻿# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Artifacts
+/artifacts
